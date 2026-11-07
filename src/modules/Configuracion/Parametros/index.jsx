@@ -37,7 +37,7 @@ const Parametros = ({ route }) => {
       cells={cells}
       filtrosConfig={filtrosConfig}
       titulo={titulo}
-      subtitulo='Valores que usa el sistema en sus procesos (cobros, avisos, clases). Solo se edita el valor.'
+      subtitulo='Ajustes que usa el chatbot (ventana de conversación, mensajes por defecto). Solo se edita el valor.'
       urlAyuda={urlAyuda}
       permisos={permisos}
       entidadNombre='Parámetro'

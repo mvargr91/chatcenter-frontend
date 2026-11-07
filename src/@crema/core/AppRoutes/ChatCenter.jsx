@@ -23,6 +23,8 @@ const ProductoCreador = React.lazy(() => import('../../../modules/Catalogo/Produ
 // Configuración
 const NumerosWhatsapp = React.lazy(() => import('../../../modules/Configuracion/NumerosWhatsapp'));
 const NumeroCreador = React.lazy(() => import('../../../modules/Configuracion/NumerosWhatsapp/NumeroCreador'));
+const Parametros = React.lazy(() => import('../../../modules/Configuracion/Parametros'));
+const ParametroCreador = React.lazy(() => import('../../../modules/Configuracion/Parametros/ParametroCreador'));
 
 // Al guardar se vuelve a la lista, que se recarga al montarse.
 const sinRecarga = () => {};
@@ -55,4 +57,5 @@ export const chatCenterConfigs = [
   ...rutasCrud('/productos', Productos, (p) => <ProductoCreador producto={p.id} {...props(p)} />),
   // Configuración
   ...rutasCrud('/numeros-whatsapp', NumerosWhatsapp, (p) => <NumeroCreador numero={p.id} {...props(p)} />),
+  ...rutasCrud('/parametros', Parametros, (p) => <ParametroCreador parametro={p.id} {...props(p)} />, ['editar', 'ver']),
 ];

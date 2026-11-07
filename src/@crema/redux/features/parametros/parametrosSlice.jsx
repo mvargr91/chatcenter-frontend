@@ -1,4 +1,4 @@
-// Configuración: parámetros del sistema de la academia (los códigos los define el sistema).
+// Configuración: parámetros del negocio (los códigos los define el sistema).
 import { createCrudSlice } from '../../helpers/createCrudSlice';
 
 const { slice, thunks } = createCrudSlice({
